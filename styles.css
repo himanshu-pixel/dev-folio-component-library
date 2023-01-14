@@ -6,9 +6,13 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+hr {
+  margin: 2rem 0rem;
+}
 .container {
-  padding-left: 1 rem;
-  padding-right: 1 rem;
+  /* padding-left: 1 rem;
+  padding-right: 1 rem; below one acts same as this */
+  padding: 0rem 1rem;
 }
 .container-center {
   max-width: 600px;
@@ -28,5 +32,10 @@ body {
   border-radius: 0.5rem;
   border: 1px solid var(--primary-color);
 }
-.unordered {
+.list-unordered-non-bullets {
+  list-style-type: none;
+}
+.list-item-inline {
+  display: inline;
+  padding: 0rem 1rem;
 }
