@@ -15,7 +15,7 @@ hr {
 .container {
   /* padding-left: 1 rem;
   padding-right: 1 rem; below one acts same as this */
-  padding: 0rem 1rem;
+  padding: 0rem 0.5rem;
 }
 .container-center {
   max-width: 600px;
@@ -23,20 +23,28 @@ hr {
 }
 .link {
   text-decoration: none;
-  padding: 0.5 rem 1 rem;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
 }
 .link-primary {
   background-color: var(--primary-color);
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   color: white;
+  max-width: 140px;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem auto;
 }
 .link-secondary {
   color: var(--primary-color);
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   border: 1px solid var(--primary-color);
+  max-width: 140px;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem auto;
 }
 .list-unordered-non-bullets {
   list-style: none;
+  padding-inline-start: 0px;
 }
 .list-item-inline {
   display: inline;
@@ -47,12 +55,15 @@ hr {
   color: white;
   padding: 1rem;
   border-bottom-left-radius: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 .navigation .nav-brand {
   font-weight: bold;
 }
 .navigation .nav-pill {
   text-align: right;
+  margin: 0.6rem 1rem;
 }
 .navigation .link {
   color: white;
@@ -65,25 +76,35 @@ hr {
   padding: 2 rem;
 }
 .hero .hero-img {
-  max-width: 350px;
+  max-width: 650px;
   display: block;
   margin: auto;
+  margin-top: 5rem;
 }
 .hero .hero-heading {
   color: var(--drak-grey);
   padding-top: 1rem;
   text-align: center;
+  font-weight: 800;
 }
 .section {
   padding: 2rem;
   /* background-color: #6c63ff; */
   /* border-radius: 0.5rem; */
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
 }
 .section h1 {
   text-align: center;
 }
 .ow {
   background-color: var(--off-white);
+  /* text-align: center; */
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .footer {
   background-color: var(--primary-color);
@@ -101,4 +122,16 @@ hr {
 .footer .footer-header {
   font-weight: bold;
   font-size: 1.1rem;
+}
+ul {
+  padding-inline-start: 0px;
+}
+.font-hero {
+  font-size: larger;
+  font-weight: bold;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
