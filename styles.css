@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #6c63ff;
-  --off-white: #d1d5db;
+  --off-white: #f3f4f6;
   --drak-grey: #6b7280;
 }
 body {
@@ -109,9 +109,13 @@ hr {
 .footer {
   background-color: var(--primary-color);
   padding: 2rem 0rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
   color: white;
   text-align: center;
-  border-top-right-radius: 1 rem;
+  border-top-right-radius: 1rem;
 }
 .footer .link {
   color: white;
